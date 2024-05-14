@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Hup</title>
-    <link rel="stylesheet" href="MainStyle.css"> <!-- رابط لملف الأنماط -->
+    <link rel="stylesheet" href="MainStyle.css"> 
 </head>
 <body>
     <header>
         <nav>               
             <img src="HealthLogo.png" alt="the Logo Health hup" class="logo" >
+            <h3>  HEALTH HUP</h3>
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">روية العيادة</a></li>
@@ -36,36 +37,14 @@
         
     </section>
     <div class="Box-Text">
+        <a>
             <h1>Health Hup</h1>
             <h2>العيادة الطبية العالمية</h2>
             <p>العيادة الطبية العالمية</p>
             <a href="#">المزيد</a>
+        </a>
         </div>
-    <script>
-        // JavaScript code for automatic slideshow
-        function nextSlide() {
-            const sliderImages = document.querySelectorAll('.slider img');
-            const currentSlide = document.querySelector('.slider img.active');
-
-            let nextSlide;
-            if (currentSlide.nextElementSibling) {
-                nextSlide = currentSlide.nextElementSibling;
-            } else {
-                nextSlide = sliderImages[0];
-            }
-
-            currentSlide.classList.remove('active');
-            nextSlide.classList.add('active');
-        }
-
-        function startSlideShow() {
-            setInterval(nextSlide, 2000);
-        }
-
-        window.onload = function() {
-            startSlideShow();
-        };
-    </script>
+    
     </body>
     
 </html>

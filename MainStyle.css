@@ -104,3 +104,25 @@ nav ul li a {
 .slider-nav a:hover{
 display: flex;
 }
+.Box-Text{
+    background-color: #0F172A;
+    text-align: center;
+    border-radius: 25px;
+    width: 350px;
+    height: 170px;
+}
+.Box-Text h1 {
+    color:#F6F5F5; /* لون النص لعنصر h1 داخل .Box-Text */
+}
+
+.Box-Text h2 {
+    color:#F6F5F5; /* لون النص لعنصر h2 داخل .Box-Text */
+}
+
+.Box-Text p {
+    color: #F6F5F5; /* لون النص لعنصر p داخل .Box-Text */
+}
+
+.Box-Text a {
+    color: #F6F5F5; /* لون النص لعنصر a داخل .Box-Text */
+}
