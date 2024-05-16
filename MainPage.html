@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Hup</title>
-    <link rel="stylesheet" href="MainStyle.css"> <!-- رابط لملف الأنماط -->
+    <link rel="stylesheet" href="MainStyle.css"> 
 </head>
 <body>
     <header>
         <nav>               
             <img src="HealthLogo.png" alt="the Logo Health hup" class="logo" >
+            <h3>  HEALTH HUP</h3>
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">روية العيادة</a></li>
@@ -18,13 +19,13 @@
             </ul>
         </nav>
     </header>
-    <section class="container-wallpaper">
+    <div class="container">
         <div class="slider-wrapper">
             <div class="slider">
-                <img id="slide-1"src="2.png">
-                <img id="slide-2"src="3.png">
-                <img id="slide-3"src="4.png">
-                <img id="slide-4"src="5.png">
+                <img id="slide-1" src="2.png">
+                <img id="slide-2" src="3.png">
+                <img id="slide-3" src="4.png">
+                <img id="slide-4" src="5.png">
             </div>
             <div class="slider-nav">
                 <a href="#slide-1"></a>
@@ -33,39 +34,26 @@
                 <a href="#slide-4"></a>
             </div>
         </div>
-        
-    </section>
-    <div class="Box-Text">
-            <h1>Health Hup</h1>
-            <h2>العيادة الطبية العالمية</h2>
-            <p>العيادة الطبية العالمية</p>
-            <a href="#">المزيد</a>
+        <div class="Box-Text">
+            <a>
+                <h1>Health Hup</h1>
+                
+                <p>  <br>نطمح في إنشاء عيادة طبية تتميز بالتفاني في تقديم رعاية صحية شاملة ومبتكرة لمجتمعنا.
+                    ، من خلال تقديم خدمات طبية عالية الجودة ومتنوعة تتسم بالاحترافية والرعاية الشخصية.
+
+                    تهدف عيادتنا إلى أن تكون مركزًا متميزًا في مجال الرعاية الصحية، حيث نجمع بين التكنولوجيا الحديثة والخبرة الطبية لتقديم العناية الشاملة للمرضى. نسعى جاهدين لتوفير بيئة آمنة ومريحة للمرضى، حيث يشعرون بالثقة والاطمئنان أثناء زيارتهم لعيادتنا.تسعى عيادتنا لتكون الرائدة في تحسين جودة الحياة وصحة المرضى،</p>
+                <a href="#">المزيد</a>
+            </a>
+            
         </div>
-    <script>
-        // JavaScript code for automatic slideshow
-        function nextSlide() {
-            const sliderImages = document.querySelectorAll('.slider img');
-            const currentSlide = document.querySelector('.slider img.active');
-
-            let nextSlide;
-            if (currentSlide.nextElementSibling) {
-                nextSlide = currentSlide.nextElementSibling;
-            } else {
-                nextSlide = sliderImages[0];
-            }
-
-            currentSlide.classList.remove('active');
-            nextSlide.classList.add('active');
-        }
-
-        function startSlideShow() {
-            setInterval(nextSlide, 2000);
-        }
-
-        window.onload = function() {
-            startSlideShow();
-        };
-    </script>
+    </div>
+    <section >
+    <div class="DEPARTMENT">
+        <h2> <br> </h2>
+        <a>خدمات صحية شاملة ومتكاملة</a>
+        <p>تقديم خدمة طبية شاملة وآمنة ومتميزة وبأعلى معايير الجودة للمرضى الاردنيين والدوليين من خلال كوادر مؤهلهة وباستخدام احدث التكنولوجيا الطبية اخذين بعين الاعتبار رضى متلقي الخدمة والتحلي باخلاقيات المهنة وضرورة رفع كفاءة العاملين في المستشفى باستمرار .</p>
+    </div>
+    </section>
     </body>
     
 </html>

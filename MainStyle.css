@@ -11,6 +11,8 @@ header {
     align-items: center
 }
 body {
+    scrollbar-width:0;
+    width: max-content;
     /* background-image: url('BackGround.png');*/
     background-color: #CBD5E1;
     background-size: cover; /* تغطية الصورة على كامل الشاشة */
@@ -20,11 +22,11 @@ body {
 
 .container {
     
-    width: 20%; /* عرض الهيدر */
+   /* width: 20%;  عرض الهيدر */
     margin: 0 auto;  /*لتوسيط الهيدر في الصفحة */
     display: flex; /* استخدام تخطيط مرن */
     justify-content: space-between; /* توزيع العناصر بالتساوي على طول المسافة الأفقية */
-    align-items: center; /* توسيط العناصر عموديًا */
+    /*align-items: center;  توسيط العناصر عموديًا */
 }
 
 .logo {
@@ -69,6 +71,8 @@ nav ul li a {
     position: relative;
     max-width: 48rem;
     margin: 0 auto; 
+    flex: 1; /* ينمو الBox-Text ليملأ المساحة المتبقية */
+    padding: 20px; /* تباعد داخلي للعنصر */
 }
 .slider{
     display: flex;
@@ -104,3 +108,46 @@ nav ul li a {
 .slider-nav a:hover{
 display: flex;
 }
+.container .Box-Text {
+    background-color: #0F172A;
+    text-align: center;
+    border-radius: 25px;
+    width: 350px;
+    height: fit-content;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.Box-Text h1 {
+    color:#F6F5F5; /* لون النص لعنصر h1 داخل .Box-Text */
+}
+
+.Box-Text h2 {
+    color:#F6F5F5; /* لون النص لعنصر h2 داخل .Box-Text */
+}
+
+.Box-Text p {
+    color: #F6F5F5; /* لون النص لعنصر p داخل .Box-Text */
+}
+
+.Box-Text a {
+    color: #F6F5F5; /* لون النص لعنصر a داخل .Box-Text */
+}
+.Box-Text {
+    flex: 1; /* ينمو الBox-Text ليملأ المساحة المتبقية */
+    padding: 20px; /* تباعد داخلي للعنصر */
+}
+.DEPARTMENT{
+    background-image: url(BACKGRONDDEPARTMENT.png);
+    width: 1480px;
+    border-radius: 10px;
+    border:#0a1014;
+    height: 400px;
+    text-align: center;
+    
+}
+.DEPARTMENT a{
+    font-size: 45px;
+    
+    margin-top: 20px;
+}
+
