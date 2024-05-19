@@ -8,9 +8,11 @@
 </head>
 <body>
     <header>
-        <nav>               
-            <img src="HealthLogo.png" alt="the Logo Health hup" class="logo" >
-            <h3>  HEALTH HUP</h3>
+        <nav>
+            <a href="MainPage.html">               
+            <img src="HealthLogo.png" alt="the Logo Health hup" class="logo"  >
+            </a>
+            <h3>  HEALTH HUP </h3>
             <ul>
                 <li><a href="fag.html">FAQ</a></li>
                 <li><a href="mission.html">روية العيادة</a></li>
@@ -41,18 +43,87 @@
                 <p>  <br>نطمح في إنشاء عيادة طبية تتميز بالتفاني في تقديم رعاية صحية شاملة ومبتكرة لمجتمعنا.
                     ، من خلال تقديم خدمات طبية عالية الجودة ومتنوعة تتسم بالاحترافية والرعاية الشخصية.
                     تهدف عيادتنا إلى أن تكون مركزًا متميزًا في مجال الرعاية الصحية، حيث نجمع بين التكنولوجيا الحديثة والخبرة الطبية لتقديم العناية الشاملة للمرضى. نسعى جاهدين لتوفير بيئة آمنة ومريحة للمرضى، حيث يشعرون بالثقة والاطمئنان أثناء زيارتهم لعيادتنا.تسعى عيادتنا لتكون الرائدة في تحسين جودة الحياة وصحة المرضى،</p>
-                <a href="#">المزيد</a>
+                <a href="mission.html">المزيد</a>
             </a>
             
         </div>
     </div>
     <section >
+        <link rel="stylesheet" href="Dep-Contect.css">
     <div class="DEPARTMENT">
-        <h2> <br> </h2>
-        <a>خدمات صحية شاملة ومتكاملة</a>
-        <p>تقديم خدمة طبية شاملة وآمنة ومتميزة وبأعلى معايير الجودة للمرضى الاردنيين والدوليين من خلال كوادر مؤهلهة وباستخدام احدث التكنولوجيا الطبية اخذين بعين الاعتبار رضى متلقي الخدمة والتحلي باخلاقيات المهنة وضرورة رفع كفاءة العاملين في المستشفى باستمرار .</p>
-    </div>
+        <br><br>
+        <h1>خدمات صحية شاملة متكاملة</h1>
+        <a>تقديم خدمة طبية شاملة ومتميزة
+            وبأعلى معايير الجودة للمرضى والزائري
+            ن من خلال مؤهلات واستخدام أحدث التكنولوجي
+            الطبية بأعين اعتبار رضا المرضى متلقي 
+            الخدمة والالتزام بالخصائص المهنية وضرورة
+            رفع كفاءة العاملين في المستشفى باستمرار
+        </a>
+        <div class="info2">
+            <div>السرير<br>98</div>
+            <div>مراكز<br>8</div>
+            <div>أقسام<br>15</div>
+            <div>طوابق<br>5</div>
+            <br>
+        </div>
+                <button class="more-button">More</button>
     </section>
+    
+    <div class="contactus">
+        <link rel="stylesheet" href="Dep-Contect.css">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <p>Health Hup
+                </br>Amman Jordan
+                </br>p.o.Box 0000 Amman
+                </br>Call:(+962)77-0000000
+                </br>Email:<a href = "@">karam@gmail.com</a>
+                </br>Email:<a href = "@">huzayfa@gmail.com</a>
+            </p>
+        </fieldset>
+    </div>		
+        <div class="contactus">
+        <fieldset><legend>More Information</legend>
+        <p><a href = "@">About Health Hup</a>
+        </br><a href = "@">Terms of use</a>
+        </br><a href = "@">Help center</a>
+        </br><a href = "@">Account</a>
+        </p>
+        </div>	
+        <div class="footer">
+            <div class="links">
+                <a href="#" class="logos insta"></a>
+                <a href="#" class="logos facebook"></a>
+                <a href="#" class="logos x"></a>
+                <a href="#" class="logos linkedin"></a>
+            </div>
+        </div>
+        <div>
+            <script>
+                // JavaScript code for automatic slideshow
+                function nextSlide() {
+                    const sliderImages = document.querySelectorAll('.slider img');
+                    const currentSlide = document.querySelector('.slider img.active');
+                    let nextSlide;
+                    if (currentSlide.nextElementSibling) {
+                        nextSlide = currentSlide.nextElementSibling;
+                    } else {
+                        nextSlide = sliderImages[0];
+                    }
+        
+                    currentSlide.classList.remove('active');
+                    nextSlide.classList.add('active');
+                }
+        
+                function startSlideShow() {
+                    setInterval(nextSlide, 2000);
+                }
+        
+                window.onload = function() {
+                    startSlideShow();
+                };
+            </script>
     </body>
     
 </html>

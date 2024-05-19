@@ -2,17 +2,25 @@ header {
     background-color: #0F172A; /* لون خلفية الهيدر */
     color: #6989A4; /* لون النص في الهيدر */
     padding: 0px 0; /* تباعد داخلي للهيدر */
-    margin-left: 0;
+    position: sticky;
     align-items: center;
-    border-radius :25px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    align-items: center
+    border-radius :20px;
+    border: 0;
+    top: 0;
+    align-items:center ;    
+}
+body header nav img{
+    width: fit-content;
+    height: fit-content;
+}
+body header nav a{
+    margin-right: 10px;
+    
+    width: 90px;
+    height: 90px;
 }
 body {
-    scrollbar-width:0;
-    width: max-content;
+    
     /* background-image: url('BackGround.png');*/
     background-color: #CBD5E1;
     background-size: cover; /* تغطية الصورة على كامل الشاشة */
@@ -31,8 +39,10 @@ body {
 
 .logo {
 cursor: pointer;
-    width: 4%; /* عرض الشعار */
-    height: 4%; /* للحفاظ على نسب الأبعاد */
+    width: 100%; /* عرض الشعار */
+    height: 100%; /* للحفاظ على نسب الأبعاد */
+    margin-right: 0;
+    padding: 0;
 }
 nav{
     margin-left: 20px;
@@ -44,6 +54,7 @@ nav{
 }
 
 nav ul {
+
     list-style-type: none; /* إزالة نقاط القوائم */
     margin: 0;
     padding: 0;
@@ -136,18 +147,3 @@ display: flex;
     flex: 1; /* ينمو الBox-Text ليملأ المساحة المتبقية */
     padding: 20px; /* تباعد داخلي للعنصر */
 }
-.DEPARTMENT{
-    background-image: url(BACKGRONDDEPARTMENT.png);
-    width: 1480px;
-    border-radius: 10px;
-    border:#0a1014;
-    height: 400px;
-    text-align: center;
-    
-}
-.DEPARTMENT a{
-    font-size: 45px;
-    
-    margin-top: 20px;
-}
-
