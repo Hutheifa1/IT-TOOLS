@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="missionStyle.css"> 
 </head>
 <body>
+    <header>
+        <nav class="navHeader">               
+            <a href="MainPage.html">               
+                <img src="HealthLogo.png" alt="the Logo Health hup" class="logo"  >
+            </a>
+            <h3>  HEALTH HUP</h3>
+            <ul>
+                <li><a href="fag.html">FAQ</a></li>
+                <li><a href="mission.html">روية العيادة</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+                <li><a href="clinics.html"> العيادات</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <div class="contactus">
+        <link rel="stylesheet" href="Dep-Contect.css">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <p>Health Hup
+                </br>Amman Jordan
+                </br>p.o.Box 0000 Amman
+                </br>Call:(+962)77-0000000
+                </br>Email:<a href = "@">karam@gmail.com</a>
+                </br>Email:<a href = "@">huzayfa@gmail.com</a>
+            </p>
+        </fieldset>
+    </div>		
+        <div class="contactus">
+        <fieldset><legend>More Information</legend>
+        <p><a href = "@">About Health Hup</a>
+        </br><a href = "@">Terms of use</a>
+        </br><a href = "@">Help center</a>
+        </br><a href = "@">Account</a>
+        </p>
+        </div>	
+        <div class="footer">
+            <div class="links">
+                <a href="#" class="logos insta"></a>
+                <a href="#" class="logos facebook"></a>
+                <a href="#" class="logos x"></a>
+                <a href="#" class="logos linkedin"></a>
+            </div>
+        </div>
+        <div>
+            <script>
+                // JavaScript code for automatic slideshow
+                function nextSlide() {
+                    const sliderImages = document.querySelectorAll('.slider img');
+                    const currentSlide = document.querySelector('.slider img.active');
+                    let nextSlide;
+                    if (currentSlide.nextElementSibling) {
+                        nextSlide = currentSlide.nextElementSibling;
+                    } else {
+                        nextSlide = sliderImages[0];
+                    }
+        
+                    currentSlide.classList.remove('active');
+                    nextSlide.classList.add('active');
+                }
+        
+                function startSlideShow() {
+                    setInterval(nextSlide, 2000);
+                }
+        
+                window.onload = function() {
+                    startSlideShow();
+                };
+            </script>
 </body>
 </html>
