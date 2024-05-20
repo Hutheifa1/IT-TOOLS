@@ -147,3 +147,71 @@ display: flex;
     flex: 1; /* ينمو الBox-Text ليملأ المساحة المتبقية */
     padding: 20px; /* تباعد داخلي للعنصر */
 }
+.contactus fieldset {
+     background-color: #F6F5F5; 
+}
+.contactus{
+	float: left;
+	width: 45%;
+	padding: 15px;
+}
+.more {
+	float: left;
+	width: 45%;
+	padding: 15px;
+}
+.more a{
+	color:black;
+}
+.contactus a{
+	color:#F6F5F5;
+}
+.footer {
+	clear: both;
+    margin-top: auto; 
+	background-color:#0F172A;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	border-radius:25px;
+        }
+
+.links {
+    display: flex;
+    gap: 20px;
+    color: #F6F5F5;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+	background-color: #007BFF;
+    border-radius: 50%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logos:hover {
+    background-size: 110%;
+}
+
+
+.logos.insta {
+    background-image: url('instag.webp');
+}
+
+.logos.facebook {
+    background-image: url('facebook.webp');
+}
+
+.logos.x {
+    background-image: url('x.avif');
+}
+
+.logos.linkedin {
+    background-image: url('linkedin.png');
+}
