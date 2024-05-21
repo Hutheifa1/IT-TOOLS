@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج موعد طبي</title>
+    <style type="text/css">
+      header {
+    background-color: #0F172A; /* لون خلفية الهيدر */
+    color: #6989A4; /* لون النص في الهيدر */
+    padding: 0px 0; /* تباعد داخلي للهيدر */
+    position: sticky;
+    align-items: center;
+    border-radius :20px;
+    border: 0;
+    top: 0;
+    align-items:center ;    
+}
+body header nav img{
+    width: fit-content;
+    height: fit-content;
+}
+body header nav a{
+    margin-right: 10px;
+    
+    width: 90px;
+    height: 90px;
+}
+body {
+    
+    /* background-image: url('BackGround.png');*/
+    background-color: #CBD5E1;
+    background-size: cover; /* تغطية الصورة على كامل الشاشة */
+    /*background-position: center;  وضعية الصورة في الوسط */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+}
+
+.container {
+    
+   /* width: 20%;  عرض الهيدر */
+    margin: 0 auto;  /*لتوسيط الهيدر في الصفحة */
+    display: flex; /* استخدام تخطيط مرن */
+    justify-content: space-between; /* توزيع العناصر بالتساوي على طول المسافة الأفقية */
+    /*align-items: center;  توسيط العناصر عموديًا */
+}
+
+.logo {
+cursor: pointer;
+    width: 100%; /* عرض الشعار */
+    height: 100%; /* للحفاظ على نسب الأبعاد */
+    margin-right: 0;
+    padding: 0;
+}
+nav{
+    margin-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding : 10px 0;
+}
+
+nav ul {
+
+    list-style-type: none; /* إزالة نقاط القوائم */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block; /* عرض العناصر جنبًا إلى جنب */
+    margin:10px 20px; /* تباعد بين العناصر */
+}
+.container li{
+    text-decoration-color: #0a1014;
+}
+nav ul li a {
+    color: #fff; /* لون الروابط */
+    text-decoration: none; /* إزالة التأثيرات النصية الافتراضية */
+}
+.container-wallpaper{
+    padding: 2rem;
+    width: max-content;
+}
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto; 
+    flex: 1; /* ينمو الBox-Text ليملأ المساحة المتبقية */
+    padding: 20px; /* تباعد داخلي للعنصر */
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%.0.25);
+    border-radius: 15px;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align:start ;
+    object-fit:cover ;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute ;
+    bottom: 1.25rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+display: flex;
+}
+.container .Box-Text {
+    background-color: #0F172A;
+    text-align: center;
+    border-radius: 25px;
+    width: 350px;
+    height: fit-content;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.Box-Text h1 {
+    color:#F6F5F5; /* لون النص لعنصر h1 داخل .Box-Text */
+}
+
+.Box-Text h2 {
+    color:#F6F5F5; /* لون النص لعنصر h2 داخل .Box-Text */
+}
+
+.Box-Text p {
+    color: #F6F5F5; /* لون النص لعنصر p داخل .Box-Text */
+}
+
+.Box-Text a {
+    color: #F6F5F5; /* لون النص لعنصر a داخل .Box-Text */
+}
+.Box-Text {
+    flex: 1; /* ينمو الBox-Text ليملأ المساحة المتبقية */
+    padding: 20px; /* تباعد داخلي للعنصر */
+}
+.contactus fieldset {
+     background-color: #F6F5F5; 
+}
+.contactus{
+	float: left;
+	width: 45%;
+	padding: 15px;
+}
+.more {
+	float: left;
+	width: 45%;
+	padding: 15px;
+}
+.more a{
+	color:black;
+}
+.contactus a{
+	color:#F6F5F5;
+}
+.footer {
+	clear: both;
+    margin-top: auto; 
+	background-color:#0F172A;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	border-radius:25px;
+        }
+
+.links {
+    display: flex;
+    gap: 20px;
+    color: #F6F5F5;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+	background-color: #007BFF;
+    border-radius: 50%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logos:hover {
+    background-size: 110%;
+}
+
+
+.logos.insta {
+    background-image: url('instag.webp');
+}
+
+.logos.facebook {
+    background-image: url('facebook.webp');
+}
+
+.logos.x {
+    background-image: url('x.avif');
+}
+
+.logos.linkedin {
+    background-image: url('linkedin.png');
+}
+ body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <h1 style="text-align: center;" >نموذج موعد طبي</h1>
+</head>
+<body>
+    <header>
+        <nav class="navHeader">               
+            <a href="MainPage.html">               
+                <img src="HealthLogo.png" alt="the Logo Health hup" class="logo"  >
+            </a>
+            <h3>  HEALTH HUP</h3>
+            <ul>
+                <li><a href="fag.html">FAQ</a></li>
+                <li><a href="mission.html">روية المستشفى</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+                <li><a href="clinics.html"> العيادات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="form-container">
+    <form>
+        <div class="form-group">
+            <label for="full-name">الاسم الكامل</label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="city">المدينة</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="department">القسم</label>
+            <select id="department" name="department" required>
+                <option value="">اختر القسم </option>
+                <option value="1"> العيون</option>
+                   <option value="2">الاسنان</option>
+                   <option value="3">الجراحة</option>
+                   <option value="4">العيون</option>
+                 
+                
+               
+               
+            </select>
+            
+        </div>
+        <div class="form-group">
+            <label for="doctor">الطبيب</label>
+            <select id="doctor" name="doctor" required>  
+                if  
+                <option value="select">اختر الطبيب</option>
+               <option value="1"> د. احمد الباسم</option>
+               <option value="2"> د. رؤى داوود</option>
+               <option value="3">د. يوسف الاحمد</option>
+               <option value="4"> د.سامي العقرباوي</option>
+               <option value="5">د. هاشم مراد</option> 
+               <option value="6">د.قسام ارسلان</option>
+               <option value="7"> د. ياسر ايمن</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="preferred-date">التاريخ / الوقت المفضل للموعد</label>
+            <input type="date" id="preferred-date" name="preferred-date" required>
+        </div>
+        <div class="form-group">
+            <label for="preferred-time">الوقت المفضل لمعاودة الاتصال</label>
+            <input type="date" id="preferred-time" name="preferred-time" required>
+        </div>
+        <div class="form-group">
+            <label for="medical-condition">الحالة الطبية</label>
+            <textarea id="medical-condition" name="medical-condition" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">إرسال</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
